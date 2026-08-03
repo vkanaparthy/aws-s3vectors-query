@@ -62,7 +62,6 @@ class S3VectorsQuery:
                 "metadata": product['metadata'],
             }
             vectors_to_insert.append(vector_data)
-        return 
         # Insert vectors
         try:
             put_response = self.s3vectors.put_vectors(
